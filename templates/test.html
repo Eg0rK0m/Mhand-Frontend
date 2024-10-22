@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <div class="product-card">
-        <div class="product-card__images"><img src="" alt=""></div>
+        <div class="product-card__images">
+            <div class="swiper productGallerySlider">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://www.pngmart.com/files/6/Shoe-Download-PNG-Image.png" alt=""></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/originals/eb/2c/fb/eb2cfbf33fee2b38b611fbcfb0fc29fa.png" alt=""></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/originals/ae/a3/44/aea3449afb8d3b12786e7af295eb96ce.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
         <div class="product-card__information">
             <div class="product-card__information__price-block">
                 <div class="product-card__information__price-block__price">7 010 ₽</div>
@@ -34,7 +46,8 @@
             </div>
         </div>
         <div class="product-card__buttons">
-            <button class="button button_size_basic button_style_accent">Купить</button>
+            <button class="button button_size_basic button_style_accent buy">Купить</button>
+            <button class="button button_size_icon button_style_outline"><img src="../src/images/heart.svg" alt=""></button>
         </div>
     </div>
 
@@ -60,5 +73,8 @@
     <div class="input input_type_search input_state_static">
         <input type="text">
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../src/scripts/app.js"></script>
 </body>
 </html>
