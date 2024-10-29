@@ -20,7 +20,7 @@
     }
     &__images {
         position: relative;
-        background: $bg-primary;
+        background-color: $bg-inverse-transparent-3;
         border-radius: 1rem;
         overflow: hidden;
         &::before {
