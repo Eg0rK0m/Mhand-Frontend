@@ -1,0 +1,15 @@
+.promo-section{
+    width: 160rem;
+    height: 29.75rem;
+    display: flex;
+    &__loyalty{
+            background-color: $bg-accent;
+            width: 140rem;
+            height: 19.75rem;
+            .button-variants{
+                &__master-button{
+                font-size: 99.333rem;
+            }
+        }
+    }
+}
