@@ -766,4 +766,30 @@ input::placeholder {
   gap: 1.75rem;
 }
 
+.promo-section {
+  position: relative;
+}
+.promo-section__loyality {
+  left: 50%;
+  margin: 0 auto;
+  width: 140rem;
+  height: 19.75rem;
+  gap: 0;
+  background-color: #FFE600;
+  border-radius: 2.5rem;
+}
+.promo-section .master-button {
+  margin: 200px;
+  width: 14.333rem;
+  height: 5.833rem;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.promo-section .master-button__butt {
+  font-size: 2rem;
+  line-height: 5.833rem;
+}
+
 /*# sourceMappingURL=main.css.map */
