@@ -28,25 +28,25 @@
                 padding: 0.25rem 0.75rem;
             }
         }
-        &_icon{
+        &_icon {
             padding: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            img{
+            img {
                 @include image_settings(contain);
-                width:2.5rem;
+                width: 2.5rem;
                 height: 2.5rem;
             }
-            &-small{
+            &-small {
                 padding: 0.5rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                img{
-                @include image_settings(contain);
-                width:2rem;
-                height: 2rem;
+                img {
+                    @include image_settings(contain);
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
         }
@@ -105,31 +105,31 @@
                 background-color: $border-primary-transparent-3;
                 color: $text-primary-transparent-15;
             }
-            &-subdued{
+            &-subdued {
                 background: none;
-                &:hover{
+                &:hover {
                     background-color: $bg-inverse-transparent-6;
                 }
-                &:active{
+                &:active {
                     background-color: $bg-accent;
                 }
-                &:disabled{
+                &:disabled {
                     background-color: $bg-inverse-transparent-6;
-                    img{
-                    filter: grayscale(1);
-                    opacity: 0.15;
+                    img {
+                        filter: grayscale(1);
+                        opacity: 0.15;
                     }
                 }
             }
         }
-        &_gray{
+        &_gray {
             background-color: $bg-inverse-transparent-6;
-            &:hover{
+            &:hover {
                 background-color: $bg-accent;
             }
-            &:active{
+            &:active {
                 background-color: $bg-inverse;
-                img{
+                img {
                     filter: invert(1);
                 }
             }

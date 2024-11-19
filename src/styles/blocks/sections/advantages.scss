@@ -11,6 +11,7 @@
                     .swiper-slide{
                         border-radius: 2.5rem;
                         overflow: hidden;
+                        height: auto;
                         img{
                             @include image_settings(cover);
                         }
@@ -26,34 +27,51 @@
                     cursor: pointer;
                     width: 4.5rem;
                     height: 4.5rem;
+                    @include mobile{
+                        top: auto;
+                        bottom: 1.5rem;
+                        transform: none;
+                    }
                     &.swiper-button-disabled{
                         opacity: 0.5;
                     }
                 }
                 &.prev{
                     left: -2.25rem;
+                    @include mobile{
+                        left: 1.75rem;
+                    }
                 }
                 &.next{
                     right: -2.5rem;
+                    @include mobile{
+                        right: 1.75rem;
+                    }
                 }
             }
         }
         &__additional{
+            &::-webkit-scrollbar {
+                display: none;
+            }
             @include grid(5, 1.75rem);
-                .test{
+            @include mobile{
                 display: flex;
-                
-                
-                justify-content: center;
-                align-items: center;
-                width: 26.583rem;
-                height: 15.5rem;
-                    .test-img{
-                    
-                    position: absolute;
-                    width: 8.75rem;
-                    height: 8.75rem;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+                &__item{
+                overflow: hidden;
+                border-radius: 1rem;
+                padding: 1.75rem 1.75rem 5.417rem; 
+                position: relative;
+                @include mobile {
+                    width: 18.5833rem;
+                    flex: none;
                 }
+                
+                
+                
             }
         }
     }

@@ -1,0 +1,64 @@
+.burger-block {
+    position: absolute;
+    background-color: $bg-primary;
+    width: 35rem;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    @include mobile{
+        width: 100vw;
+        height: 100vh;
+    }
+    &__burger {
+        overflow-y: auto;
+    }
+}
+
+.insert{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        background-color: $bg-inverse-transparent-60;
+    }
+}
+
+body.open-menu{
+    header{
+        .header-section__info-block__item__burger-logo__burger{
+            span{
+            @include mobile{
+                position: absolute;
+            }
+            &:nth-child(1){
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                    transform: rotate(-45deg);
+            }
+            &:nth-child(3){
+                    display: none;
+            }
+            }
+        }
+    }
+}
+body.open-menu {
+    @include mobile{
+        overflow: hidden;
+    }
+    .burger-block {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
