@@ -839,9 +839,9 @@ header .header-section__info-block__item__bonuses {
   position: relative;
 }
 .advantages-section__info-block__bann .swiper .swiper-wrapper .swiper-slide {
+  height: auto;
   border-radius: 2.5rem;
   overflow: hidden;
-  height: auto;
 }
 .advantages-section__info-block__bann .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
@@ -876,7 +876,7 @@ header .header-section__info-block__item__bonuses {
   }
 }
 .advantages-section__info-block__bann .button.next {
-  right: -2.5rem;
+  right: -2.25rem;
 }
 @media (max-width: 768px) {
   .advantages-section__info-block__bann .button.next {
@@ -884,9 +884,11 @@ header .header-section__info-block__item__bonuses {
   }
 }
 .advantages-section__info-block__additional {
+  grid-column: span 5;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1.75rem;
+  overflow-x: auto;
 }
 .advantages-section__info-block__additional::-webkit-scrollbar {
   display: none;
@@ -894,21 +896,44 @@ header .header-section__info-block__item__bonuses {
 @media (max-width: 768px) {
   .advantages-section__info-block__additional {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    text-wrap: nowrap;
   }
 }
-.advantages-section__info-block__additional__item {
-  overflow: hidden;
-  border-radius: 1rem;
-  padding: 1.75rem 1.75rem 5.417rem;
+.advantages-section__info-block__additional__wrapper {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  background: white;
+  min-width: 26.58rem;
+  height: 15.5rem;
+  padding: 1.75rem;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+.advantages-section__info-block__additional__wrapper:nth-child(5) {
+  background: #FFE600;
+}
+.advantages-section__info-block__additional__head {
+  font-size: 1.75rem;
+}
+.advantages-section__info-block__additional__description {
+  font-size: 1.25rem;
+  max-width: 15rem;
+  color: rgba(56, 56, 56, 0.6);
 }
 @media (max-width: 768px) {
-  .advantages-section__info-block__additional__item {
-    width: 18.5833rem;
-    flex: none;
+  .advantages-section__info-block__additional__description {
+    max-width: 16rem;
+    height: 100%;
+    text-wrap: wrap;
   }
+}
+.advantages-section__info-block__additional img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 12rem;
+  max-height: 12rem;
 }
 
 .new-product-section__head {
