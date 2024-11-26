@@ -75,21 +75,7 @@ header {
                         }
                     }
                     &__logo {
-                        height: 4.5rem;
-                        img {
-                            @include image_settings(contain);
-                        }
-                    }
-                }
-                &__add {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    gap: 0.5rem;
-                    @include mobile{
-                        gap: 0.75rem;
-                    }
-                    &__link {
+
                         width: 4.5rem;
                         height: 4.5rem;
                         padding: 1rem;
